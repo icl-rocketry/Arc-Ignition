@@ -36,32 +36,6 @@ F 3 "~" H 3850 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5FB466FD
-P 3850 2750
-F 0 "#PWR?" H 3850 2500 50  0001 C CNN
-F 1 "GND" H 3855 2577 50  0000 C CNN
-F 2 "" H 3850 2750 50  0001 C CNN
-F 3 "" H 3850 2750 50  0001 C CNN
-	1    3850 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 2550 7450 2550
-Wire Wire Line
-	7450 2550 7450 2650
-$Comp
-L power:GND #PWR?
-U 1 1 5FB48C9E
-P 7450 2650
-F 0 "#PWR?" H 7450 2400 50  0001 C CNN
-F 1 "GND" H 7455 2477 50  0000 C CNN
-F 2 "" H 7450 2650 50  0001 C CNN
-F 3 "" H 7450 2650 50  0001 C CNN
-	1    7450 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_FET:BSS138 Q?
 U 1 1 5FB49C1C
 P 2350 3050
@@ -103,7 +77,7 @@ COM
 Text Label 6550 2450 0    50   ~ 0
 COM
 Text Label 6550 2550 0    50   ~ 0
-HV
+HV+
 Text Label 4400 3050 0    50   ~ 0
 BigRedButton
 $Comp
@@ -215,16 +189,13 @@ Wire Wire Line
 	3850 2300 3950 2300
 Connection ~ 3850 2300
 Text Label 3950 2300 0    50   ~ 0
-HV
+HV+
 Wire Wire Line
 	3850 2600 3850 2700
 Wire Wire Line
 	3400 2300 3500 2300
 Wire Wire Line
 	3400 2700 3850 2700
-Connection ~ 3850 2700
-Wire Wire Line
-	3850 2700 3850 2750
 Wire Wire Line
 	5000 2700 5000 2650
 Wire Wire Line
@@ -244,4 +215,13 @@ Wire Wire Line
 	1850 3050 2150 3050
 Wire Wire Line
 	4400 3050 4950 3050
+Wire Wire Line
+	3850 2700 3950 2700
+Connection ~ 3850 2700
+Text Label 3950 2700 0    50   ~ 0
+HV-
+Wire Wire Line
+	7500 2550 7350 2550
+Text Label 7350 2550 0    50   ~ 0
+HV-
 $EndSCHEMATC
